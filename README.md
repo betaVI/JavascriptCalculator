@@ -1,4 +1,4 @@
-# hello-world
-repositorytest
+# Javascript Calculator
+Simple Calculator built in HTML and JavaScript
 #about
-here is a simple summary about how to edit this file
+Just something I wanted to make to start my code base
