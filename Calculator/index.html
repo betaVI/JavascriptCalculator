@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="calculatorbody">
+        <div class="inputdisplay">
+            <label id="expression"></label><br />
+            <label id="value">0</label>
+        </div>
+        <table class="buttontable">
+            <tr>
+                <td><button name="percent" onclick="addFunction(this)">%</button></td>
+                <td><button name="sqrt" onclick="addFunction(this)">&radic;</button></td>
+                <td><button name="square" onclick="addFunction(this)"><i>x</i><sup>2</sup></button></td>
+                <td><button name="fraction" onclick="addFunction(this)" style="letter-spacing:-5px"><sup>1</sup><i>/x</i></button></td>
+            </tr>
+            <tr>
+                <td><button onclick="setValue('0')">CE</button></td>
+                <td><button onclick="clearAll()">C</button></td>
+                <td><button onclick="backspace()">&#8592;</button></td>
+                <td><button onclick="addOperator(this)" name="*">&times;</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="addInput(this)">7</button></td>
+                <td><button onclick="addInput(this)">8</button></td>
+                <td><button onclick="addInput(this)">9</button></td>
+                <td><button onclick="addOperator(this)" name="/">&divide;</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="addInput(this)">4</button></td>
+                <td><button onclick="addInput(this)">5</button></td>
+                <td><button onclick="addInput(this)">6</button></td>
+                <td><button onclick="addOperator(this)" name="-">&minus;</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="addInput(this)">1</button></td>
+                <td><button onclick="addInput(this)">2</button></td>
+                <td><button onclick="addInput(this)">3</button></td>
+                <td><button onclick="addOperator(this)" name="+">&#43;</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="setSign()">&plusmn;</button></td>
+                <td><button onclick="addInput(this)">0</button></td>
+                <td><button onclick="addDecimal()">.</button></td>
+                <td><button onclick="evaluateExpression()">=</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

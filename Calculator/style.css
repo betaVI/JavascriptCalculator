@@ -1,0 +1,67 @@
+body {
+    margin: 50px 0;
+}
+
+.calculatorbody {
+    margin: auto;
+    padding: 20px;
+    min-width: 200px;
+    width: 30%;
+    min-width: fit-content;
+    background-color: #BBB;
+    box-shadow: #777 10px 10px 10px;
+    border: 2px solid #888;
+    border-radius: 15px;
+}
+
+#value {
+    font-size: 4em;
+    letter-spacing:-5px
+}
+
+.buttontable {
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+    .buttontable td {
+        width: 25%;
+    }
+
+        .buttontable td button {
+            font-family: Consolas;
+            font-size: 2.5em;
+            width: 100%;
+            border: 2px outset;
+        }
+
+            .buttontable td button sup {
+                font-size: .5em;
+            }
+
+            .buttontable td button:focus {
+                outline: none;
+            }
+
+            .buttontable td button:hover {
+                background-color: #CCC;
+            }
+
+            .buttontable td button:active {
+                border: 2px inset;
+            }
+
+.inputdisplay {
+    font-family: Consolas;
+    padding: 5px;
+    text-align: right;
+    border-width: 5px;
+    background-color: #FFF;
+    border-style: inset;
+}
+
+    .inputdisplay label {
+        text-overflow: clip;
+        overflow:hidden;
+        width:100%;
+    }
